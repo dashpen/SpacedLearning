@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="assets/js/navbar.js" type="module"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-1 bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <!-- <h4 class="sidebar-heading d-flex justify-content-center align-items-center border-bottom">Home</h4> -->
+                    <h5 class="sidebar-heading d-flex justify-content-center align-items-center border-bottom pt-3">Subjects</h5>
+                    <ul class="nav flex-column" id="subjectList"></ul>
+                </div>
+            </nav>
+            <div class="col-md-8 d-flex flex-column justify-content-center pt-3 mx-3" role="main">
+                <h2 class="border-bottom text-center">Dashboard</h2>
+                <div>[border]</div>
+                <h1 class=" text-center pt-4">Review</h1>
+                <div class="d-flex">
+                </div>
+                <div class="container border-bottom pb-2">
+                    <div class="row py-3">
+                        <div class="col-md-1"></div>
+                        <h4 class="col-md-auto">Card</h4>
+                    </div>
+                    <div class="row" id="mainCardContainer">
+                        <div class="col-md-2"></div>
+                        <div class="col">a</div>
+                        <div class="col">b</div>
+                        <div class="col">c</div>
+                    </div>
+                    <div class="row my-5"></div>
+                    <div class="row py-3">
+                        <div class="col-md-1"></div>
+                        <h4 class="col-md-auto">Subject</h4>
+                    </div>
+                    <div class="row" id="mainSubjectContainer">
+                        <div class="col-md-2"></div>
+                        <div class="col">a</div>
+                        <div class="col">b</div>
+                        <div class="col">c</div>
+                    </div>
+                </div>
+                <div>[border]</div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="col-md-auto"></div>
+    </div>
+
+    <script src="assets/js/dashboard.js" type="module"></script>
+</body>
+</html>

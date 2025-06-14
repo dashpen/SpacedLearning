@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Set</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="assets/js/navbar.js" type="module"></script>
+</head>
+<body>
+    <div class="d-none" style="width: 100%; height: 100%; position: absolute; x:0; y:0;" id="createSubjectContainer">
+        <div class="d-flex justify-content-center align-items-center" style="width: 100%; height: 100vh;">
+            <div class="border bg-dark" style="width: 500px;">
+                <form class="p-4" id="createSubjectForm">
+                    <h1 class="text-center text-white">Create Subject</h1>
+                    <label for="subjectName" class="text-white">Subject Name:</label>
+                    <input type="text" id="subjectName" name="subjectName" class="form-control" required>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button type="submit" class="mx-auto mt-3 text-center btn btn-primary btn-block">Create Subject</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="navbar"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-1 bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h5 class="sidebar-heading d-flex justify-content-center align-items-center border-bottom pt-3">Subjects</h5>
+                    <ul class="nav flex-column" id="subjectList"></ul>
+                </div>
+            </nav>
+            <div class="col-md d-flex flex-column justify-content-center pt-3 mx-3" role="main">
+                <h2 class="border-bottom text-center">Create Card</h2>
+                <form id="createCardForm" class="mt-4">
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <div class="input-group">
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="" disabled selected>Select a subject</option>
+                            </select>
+                            <button class="btn btn-outline-secondary" type="button" id="showSubjectButton">+</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="front">Front:</label>
+                        <input type="text" id="front" name="front" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="back">Back:</label>
+                        <input type="text" id="back" name="back" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Create Card</button>
+                    </div>
+                    <!-- <div class="form-group"> -->
+                        <!-- <p>Want to create a new subject? <a href="#" id="showSubjectButton">Create it here</a></p> -->
+                    <!-- </div> -->
+                </form>
+                <div id="errorMessage" class="alert alert-danger" style="display: none;"></div>
+                <div id="successMessage" class="alert alert-success" style="display: none;"></div>
+                <div id="loadingMessage" class="alert alert-info" style="display: none;">Loading...</div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/create-set.js" type="module"></script>
+</body>
