@@ -1,4 +1,4 @@
-fetch("/navbar.html", { method: "GET"})
+fetch("navbar.html", { method: "GET"})
   .then(response => response.text())
   .then((html) => {
     document.getElementById("navbar").innerHTML = html;

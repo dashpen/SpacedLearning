@@ -44,4 +44,14 @@ subjectContainer.onsubmit = async (e) => {
     subjectContainer.querySelectorAll("form")[0].reset() // reset the form
 }
 
-subjectElement = document.getElementById("subject")
+// subjectElement = document.getElementById("subject")
+
+// testing code
+
+// import { Card } from './card.js'
+// import { Rating } from 'https://cdn.jsdelivr.net/npm/ts-fsrs@latest/+esm';
+// const myCard = new Card(1, "Math", "Algebra", "Solve for x in 2x + 3 = 7", "x = 2", [], [], true);
+// console.log(myCard);
+// myCard.stepCard(Rating.Good); // Example of stepping the card with a rating of 'Good'
+// console.log(Rating)
+// console.log(myCard.getDueDate()); // Get the due date of the card

@@ -6,7 +6,7 @@ import {
   FSRS,
   Rating,
 //   RecordLog,
-} from "ts-fsrs";
+} from 'https://cdn.jsdelivr.net/npm/ts-fsrs@latest/+esm';
 
 export class Card {
     constructor(id, subject, title, description, answer, problems, children, isPrivate = true, FSRSCard = createEmptyCard()) {
