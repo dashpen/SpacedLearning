@@ -55,14 +55,48 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="front">Front:</label>
-                        <input type="text" id="front" name="front" class="form-control" required>
+                        <label for="front">Title:</label>
+                        <input type="text" id="title" name="title" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="back">Back:</label>
-                        <input type="text" id="back" name="back" class="form-control" required>
+                        <label for="back">Description/Front/Question:</label>
+                        <input type="text" id="front" name="front" class="form-control">
                     </div>
                     <div class="form-group">
+                        <label for="backType">Answer or Problem set?</label>
+                        <div class="input-group">
+                            <select id="backType" name="subject" class="form-control" required>
+                                <option value="" disabled selected>Select a type of back</option>
+                                <option value="answer">Answer</option>
+                                <option value="problem-set">Problem Set</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group d-none" id="problemSetContainer">
+                        <div class="row problem" id="problem0">
+                            <div class="col-md-6">
+                                <label for="problemSetProblem0">Problem:</label>
+                                <textarea type="text" name="problemSetProblem0" class="form-control" placeholder="e.g. 1+1=?, 2+2=?" required></textarea>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="problemSetAnswer0">Answer:</label>
+                                <textarea type="text" name="problemSetAnswer0" class="form-control" placeholder="e.g. 2, 4" required></textarea>
+                            </div>
+                            <!-- <div class="col-md-1 d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-danger mt-4 mr-3" id="removeProblem0">x</button>
+                            </div> -->
+                        </div>
+                        <div class="row" id="addProblemContainer">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-secondary mt-2" id="addProblem">Add Problem</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group d-none" id="answerContainer">
+                        <label for="problemSetAnswer">Answer:</label>
+                        <textarea type="text" name="problemSetAnswer" id="problemSetAnswer" class="form-control" placeholder="e.g. 2, 4" required disabled></textarea>
+                    </div>
+                    <div class="form-group pt-2">
                         <button type="submit" class="btn btn-primary">Create Card</button>
                     </div>
                     <!-- <div class="form-group"> -->
